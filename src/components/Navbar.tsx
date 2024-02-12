@@ -1,8 +1,21 @@
 import React from 'react'
+import Menu from './Menu'
+import Link from 'next/link'
 
 const NavBar = () => {
   return (
-    <div>NavBar</div>
+    <div className='h-12 text-red-500 p-4 flex items-center justify-between border-b-2 border-b-red-500 uppercase'>
+      {/* logo */}
+      <div className='text-xl'>
+        <Link href="/">
+        Massimo
+        </Link>
+      </div>
+      {/* Mobile */}
+      <div>
+        <Menu/>
+      </div>
+    </div>
   )
 }
 
